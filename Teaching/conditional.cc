@@ -3,28 +3,19 @@ using namespace std;
 int main()
 {
 
-    // int score;
-    // cout << " Please enter your score : ";
-    // cin >> score;
+    for (int i = 1; i <= 20; i++)
+    {
 
-
-    // if(score < 40){
-    //     cout << "give the exam again" << endl;
-    // }
-    // if ( score > 90 ){
-    //     cout << "perfect" << endl;
-    // }else if (score > 80){
-    //     cout << "almost perfect"<< endl; 
-    // } 
-    // else{
-    //     cout << "this is else statement"<< endl;
-    // }
-
-    puts(" this will get printed");
-
-
-
-
+        cout << " this is the table of :" << i << endl;
+        for (int j = 1; j < 11; j++)
+        {
+            
+            
+            cout << i << " X " << j << " = " << i * j << endl;
+        }
+        cout << endl;
+    }
+    
 
 
  return 0;

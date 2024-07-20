@@ -1,1 +1,1 @@
-superman
+cout << superman + batman ;

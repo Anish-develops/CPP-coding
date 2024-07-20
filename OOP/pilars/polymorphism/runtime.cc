@@ -3,17 +3,28 @@ using namespace std;
 
 class Animal{
     public:
-    void speak (){
-        cout << "this animal is speaking"<< endl;
+    // virtual void  speak (){
+    //     cout << "this animal is speaking"<< endl;
 
-    }
+    // }
+    
+    virtual void speak() = 0 ;
+    
+    
 };
 
 class Dog : public Animal {
 public:
-    void speak()
+     void speak() override
     {
         cout << "the dog is barking" << endl;
+    }
+};
+
+class Cat : public Animal{
+public:
+    void speak() override{
+        cout << "Meow Meow " << endl;
     }
 };
 
@@ -22,5 +33,13 @@ int main()
     Dog dog;
     dog.speak();
 
- return 0;
+    Cat Sargun ;
+    Sargun.speak();
+
+    Animal * german = new Dog();
+    german->speak();
+
+    delete german ;
+
+    return 0;
 }

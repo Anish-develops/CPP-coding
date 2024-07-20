@@ -86,6 +86,21 @@ public:
         cout << endl;
 
     }
+
+
+    // operator loading 
+    string operator+ (Superheros temp){
+        string name = temp.getName();
+        string ath = this->getName();
+        return ath.append(name);
+
+    }
+
+    int operator- (Superheros temp){
+        return this->getHealth() - temp.getHealth();
+    }
+    
+    
 };
 
 

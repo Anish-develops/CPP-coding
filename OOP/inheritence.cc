@@ -4,29 +4,52 @@ using namespace std;
 
 class Human{
 
+
+
     private:
         int height;
         int weight;
         int strength;
     
     public:
-        //getters
-        int getheight(){return this->height;}
-        int getweight(){return this->weight;}
-        int getstrenght(){return this->strength;}
+    friend class Athelete;
+       
+
+
+        // constructor
+
+        //Human(int height, int weight, int strength) : height(height), weight(weight), strength(strength) {}
+        // Human ():height(), weight(), strength(){}
+        Human (){}
+
+
+        Human(int height, int weight, int strength){
+            this->height = height;
+            this->weight = weight;
+            this->strength = strength;
+        }
+
+        void printmess(){
+            cout << " this is in human";
+        }
+
+        // getters
+        int getheight() { return this->height; }
+        int getweight() { return this->weight; }
+        int getstrenght() { return this->strength; }
 
         // setters
-        void setheight(int height){this->height = height;}
+        void setheight(int height) { this->height = height; }
         void setweight(int weight) { this->weight = weight; }
-        void setstrength(int strength) { this->strength = strength;}
-    
+        void setstrength(int strength) { this->strength = strength; }
+
     protected:
         int fingers = 10;
         int eyes = 2;
 
         void greetings(){cout<< "hello there what a fine evining it is "<< endl;}
         void apologies(){cout <<"i am extremly sorry"<<endl;}
-
+        
 };
 
 class Athelete : public Human
@@ -49,8 +72,13 @@ public:
 
     // functions
     int increaseheight(){
-        return this->getheight() + 1;
+        return this->height + 1;
     }
+
+    // constructor
+    
+
+    Athelete (int longjump , int swiming , int sprinting) : longJump(longjump), Swiming( swiming) , Sprinting( sprinting){}
     
 
 protected:
@@ -63,10 +91,9 @@ protected:
 };
 
 int main(){
-    Athelete anish;
+    Athelete Sargun (10, 2,5);
+    
     
 
-
-
-    return 0 ;
+return 0;
 }

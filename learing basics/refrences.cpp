@@ -1,26 +1,24 @@
 #include <iostream>
 
-using namespace std;
-
-int main(){
-    // references are the alias to any variable
-    // and mostly used in function calls and return datatype;
-
-    int number = 123123;
-    int& refnum = number;
-    refnum++;
-    cout << refnum;
-
-    int a = 10 ;
-    int b = 20 ;
-    cout << a << " "<< b <<endl;
-    swap(a, b);
-    cout << a << " " << b << endl;
+// Swap function using references
+void swapf(int &a, int &b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
 }
 
-void swap( int& first , int& sec){
-    int temp = first;
-    first = sec;
-    sec = temp;
+int main()
+{
+    int x = 5;
+    int y = 10;
 
+    std::cout << "Before swap: x = " << x << ", y = " << y << std::endl;
+
+    // Calling the swap function
+    swapf(x, y);
+
+    std::cout << "After swap: x = " << x << ", y = " << y << std::endl;
+
+    return 0;
 }

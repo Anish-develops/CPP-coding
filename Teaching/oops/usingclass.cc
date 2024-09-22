@@ -46,6 +46,8 @@ int main()
     Shazam.printHeros();
     Deedpool->printHeros();
 
+    Deedpool->printHeros("hello from another function")
+
     delete Deedpool;
 
 

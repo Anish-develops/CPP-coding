@@ -17,6 +17,9 @@ int main()
 
  return 0;
 }
+
+
+
 int age_calculator(int birth_year){
     int current_year = 2024;
     int age  = current_year - birth_year;

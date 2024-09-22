@@ -13,35 +13,42 @@ int main()
 
     int* ptr = stock;
 
+    int arr[10];
 
+    for (int  i = 1; i <= 10; i++)
+    {
+        arr[i -1] = i*5;
+    }
 
-    
+    printarray(arr , 10);
+
+    // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E ,F.
 
     // cout << superheros<< endl;
 
-    for (int  i = 0; i < sizeof(stock)/sizeof(stock[0]); i++)
-    {
+    // for (int  i = 0; i < sizeof(stock)/sizeof(stock[0]); i++)
+    // {
 
-        cout << *(ptr + i)<< "   ";
+    //     cout << *(ptr + i)<< "   ";
         
-    }
+    // }
     
 
-    cout << endl;
+    // cout << endl;
 
 
-    for( int i : stock)
-    {
-        cout << i << "   ";
-    }
+    // for( int i : stock)
+    // {
+    //     cout << i << "   ";
+    // }
 
-    cout << endl;
+    // cout << endl;
 
-    printarray(stock ,9 );
+    // printarray(stock ,9 );
 
-    cout << endl;
+    // cout << endl;
     
-    printarray2(stock);
+    // printarray2(stock);
 
    
     

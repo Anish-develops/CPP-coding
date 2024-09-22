@@ -19,7 +19,7 @@ int main (){
 
     double doubl = 0.2997813;
 
-    bool tf = false;
+    bool tf = 0;
 
     string name = "Anish";
 
@@ -42,4 +42,6 @@ int main (){
 
 return 0;
 }
+
+
 
